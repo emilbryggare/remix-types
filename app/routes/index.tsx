@@ -4,7 +4,7 @@ import { useLoaderData } from "@remix-run/react";
 
 export const loader = async ({ request }: LoaderArgs) => {
   // Generate correct types.
-  return json({ myData: { message: "Hello World!" } });
+  // return json({ myData: { message: "Hello World!" } });
 
   // Does not generate correct types, e.g. SerializeDeferred
   return json({ data: { message: "Hello World!" } });
